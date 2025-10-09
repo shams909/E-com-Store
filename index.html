@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxeTech - Premium Technology Experience</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-gray-200 antialiased font-light">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-black border-b border-gray-800 shadow-2xl">
+    <nav class="container mx-auto flex items-center justify-between py-6 px-8">
+      <div class="font-light text-3xl tracking-wider text-white">
+        LUXE<span class="font-thin text-gray-400">TECH</span>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-12 font-light tracking-wide">
+        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-500 relative group uppercase text-sm">
+          Home
+          <span class="absolute -bottom-1 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></span>
+        </a></li>
+        <li><a href="#products" class="text-gray-400 hover:text-white transition duration-500 relative group uppercase text-sm">
+          Products
+          <span class="absolute -bottom-1 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></span>
+        </a></li>
+        <li><a href="#reviews" class="text-gray-400 hover:text-white transition duration-500 relative group uppercase text-sm">
+          Reviews
+          <span class="absolute -bottom-1 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></span>
+        </a></li>
+        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-500 relative group uppercase text-sm">
+          Contact
+          <span class="absolute -bottom-1 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></span>
+        </a></li>
+      </ul>
+      
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden flex flex-col justify-center items-center w-8 h-8 group">
+        <span class="block w-6 h-0.5 bg-gray-600 mb-1 group-hover:bg-gray-400 transition duration-300"></span>
+        <span class="block w-6 h-0.5 bg-gray-600 mb-1 group-hover:bg-gray-400 transition duration-300"></span>
+        <span class="block w-6 h-0.5 bg-gray-600 group-hover:bg-gray-400 transition duration-300"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero/Carousel -->
+    <section id="home" class="relative bg-black text-white py-32 overflow-hidden min-h-screen flex items-center">
+      <!-- Subtle luxury elements -->
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-1/3 left-1/4 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
+        <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-gray-400 rounded-full filter blur-3xl"></div>
+      </div>
+      
+      <div class="relative z-10 container mx-auto px-8 flex flex-col items-center justify-center text-center">
+        <div class="mb-16">
+          <h1 class="text-6xl md:text-8xl font-thin mb-8 leading-tight tracking-wide">
+            LUXURY <br/>
+            <span class="font-extralight text-gray-400">
+              REDEFINED
+            </span>
+          </h1>
+          <p class="mb-12 text-xl md:text-2xl max-w-4xl leading-relaxed text-gray-400 font-light">
+            Experience unparalleled sophistication with our curated collection of premium technology. 
+            Where minimalist design meets cutting-edge innovation.
+          </p>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-8">
+          <a href="#products" class="group relative inline-block">
+            <div class="relative bg-white text-black font-light px-12 py-4 uppercase text-sm tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 shadow-2xl">
+              Explore Collection
+            </div>
+          </a>
+          <a href="#contact" class="group relative inline-block">
+            <div class="relative border border-gray-600 text-gray-400 font-light px-12 py-4 uppercase text-sm tracking-widest hover:border-white hover:text-white transition duration-500">
+              Contact Us
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Minimal geometric elements -->
+      <div class="absolute top-20 left-10 w-1 h-1 bg-gray-800 opacity-40"></div>
+      <div class="absolute top-40 right-20 w-1 h-1 bg-gray-800 opacity-40"></div>
+      <div class="absolute bottom-20 right-10 w-1 h-1 bg-gray-800 opacity-40"></div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="bg-black py-32 px-8">
+      <div class="container mx-auto">
+        <div class="text-center mb-24">
+          <h2 class="text-5xl font-thin mb-8 tracking-wide">
+            <span class="text-white">
+              CURATED
+            </span>
+            <span class="text-gray-600 font-extralight">
+              COLLECTION
+            </span>
+          </h2>
+          <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed font-light">
+            Meticulously selected technology pieces that define luxury and performance
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Product Cards -->
+        <div class="group relative bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700 hover:transform hover:scale-105 overflow-hidden">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="w-32 h-32 bg-gray-950 border border-gray-700 flex items-center justify-center">
+              <svg class="w-20 h-20 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-8 relative z-10">
+            <h3 class="font-light text-xl mb-4 text-white group-hover:text-gray-300 transition duration-500 tracking-wide">LUXEBOOK PRO</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed font-light text-sm">Premium ultrabook featuring aerospace-grade aluminum construction and cutting-edge performance.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-light text-2xl text-white">$2,499</span>
+              <button class="bg-white text-black px-8 py-3 text-xs uppercase tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 font-light">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700 hover:transform hover:scale-105 overflow-hidden">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="w-32 h-32 bg-gray-950 border border-gray-700 flex items-center justify-center">
+              <svg class="w-20 h-20 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M15.5 2A1.5 1.5 0 0014 3.5v13a1.5 1.5 0 001.5 1.5h1a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0016.5 2h-1zM9.5 6A1.5 1.5 0 008 7.5v9A1.5 1.5 0 009.5 18h1a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0010.5 6h-1zM3.5 10A1.5 1.5 0 002 11.5v5A1.5 1.5 0 003.5 18h1A1.5 1.5 0 006 16.5v-5A1.5 1.5 0 004.5 10h-1z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-8 relative z-10">
+            <h3 class="font-light text-xl mb-4 text-white group-hover:text-gray-300 transition duration-500 tracking-wide">AURASOUND PRO</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed font-light text-sm">Studio-grade wireless headphones with proprietary acoustic chambers and platinum components.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-light text-2xl text-white">$899</span>
+              <button class="bg-white text-black px-8 py-3 text-xs uppercase tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 font-light">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700 hover:transform hover:scale-105 overflow-hidden">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="w-32 h-32 bg-gray-950 border border-gray-700 flex items-center justify-center">
+              <svg class="w-20 h-20 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-8 relative z-10">
+            <h3 class="font-light text-xl mb-4 text-white group-hover:text-gray-300 transition duration-500 tracking-wide">CRYSTALVIEW 8K</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed font-light text-sm">Professional-grade monitor with quantum dot technology and precision color calibration.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-light text-2xl text-white">$1,299</span>
+              <button class="bg-white text-black px-8 py-3 text-xs uppercase tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 font-light">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700 hover:transform hover:scale-105 overflow-hidden">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="w-32 h-32 bg-gray-950 border border-gray-700 flex items-center justify-center">
+              <svg class="w-20 h-20 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-8 relative z-10">
+            <h3 class="font-light text-xl mb-4 text-white group-hover:text-gray-300 transition duration-500 tracking-wide">LUXEPHONE ELITE</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed font-light text-sm">Handcrafted smartphone with titanium chassis and enterprise-grade security architecture.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-light text-2xl text-white">$1,899</span>
+              <button class="bg-white text-black px-8 py-3 text-xs uppercase tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 font-light">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700 hover:transform hover:scale-105 overflow-hidden">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="w-32 h-32 bg-gray-950 border border-gray-700 flex items-center justify-center">
+              <svg class="w-20 h-20 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-8 relative z-10">
+            <h3 class="font-light text-xl mb-4 text-white group-hover:text-gray-300 transition duration-500 tracking-wide">VISIONPRO AR</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed font-light text-sm">Next-generation augmented reality system with neural interface and spatial computing.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-light text-2xl text-white">$3,999</span>
+              <button class="bg-white text-black px-8 py-3 text-xs uppercase tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 font-light">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700 hover:transform hover:scale-105 overflow-hidden">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="w-32 h-32 bg-gray-950 border border-gray-700 flex items-center justify-center">
+              <svg class="w-20 h-20 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-8 relative z-10">
+            <h3 class="font-light text-xl mb-4 text-white group-hover:text-gray-300 transition duration-500 tracking-wide">LUXEWATCH ELITE</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed font-light text-sm">Swiss-engineered smartwatch with sapphire crystal display and precision health monitoring.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-light text-2xl text-white">$1,599</span>
+              <button class="bg-white text-black px-8 py-3 text-xs uppercase tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 font-light">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700 hover:transform hover:scale-105 overflow-hidden">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="w-32 h-32 bg-gray-950 border border-gray-700 flex items-center justify-center">
+              <svg class="w-20 h-20 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M3 4a2 2 0 012-2h10a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2V4zM3 10a2 2 0 012-2h10a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-8 relative z-10">
+            <h3 class="font-light text-xl mb-4 text-white group-hover:text-gray-300 transition duration-500 tracking-wide">QUANTUMDRIVE X</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed font-light text-sm">Ultra-fast SSD storage with quantum encryption and enterprise-grade security protocols.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-light text-2xl text-white">$799</span>
+              <button class="bg-white text-black px-8 py-3 text-xs uppercase tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 font-light">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700 hover:transform hover:scale-105 overflow-hidden">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="w-32 h-32 bg-gray-950 border border-gray-700 flex items-center justify-center">
+              <svg class="w-20 h-20 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12a3 3 0 006 0 3 3 0 00-6 0z"/>
+                <path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 12a2 2 0 114 0 2 2 0 01-4 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-8 relative z-10">
+            <h3 class="font-light text-xl mb-4 text-white group-hover:text-gray-300 transition duration-500 tracking-wide">LUXECAM STUDIO</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed font-light text-sm">Professional-grade camera system with AI-powered image processing and studio-quality optics.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-light text-2xl text-white">$2,999</span>
+              <button class="bg-white text-black px-8 py-3 text-xs uppercase tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 font-light">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700 hover:transform hover:scale-105 overflow-hidden">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="w-32 h-32 bg-gray-950 border border-gray-700 flex items-center justify-center">
+              <svg class="w-20 h-20 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4z"/>
+                <path d="M5.5 9.643a.75.75 0 00-1.5 0V10c0 3.06 2.29 5.585 5.25 5.954V17.5h-1.5a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-1.5v-1.546A6.001 6.001 0 0016 10v-.357a.75.75 0 00-1.5 0V10a4.5 4.5 0 01-9 0v-.357z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="p-8 relative z-10">
+            <h3 class="font-light text-xl mb-4 text-white group-hover:text-gray-300 transition duration-500 tracking-wide">LUXEMIC STUDIO</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed font-light text-sm">Professional broadcast microphone with noise cancellation and studio-grade audio capture.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-light text-2xl text-white">$599</span>
+              <button class="bg-white text-black px-8 py-3 text-xs uppercase tracking-widest hover:bg-gray-100 transform hover:scale-105 transition duration-500 font-light">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>    <!-- Customer Reviews Section -->
+    <section id="reviews" class="bg-black py-32 px-8">
+      <div class="container mx-auto">
+        <div class="text-center mb-24">
+          <h2 class="text-5xl font-thin mb-8 tracking-wide">
+            <span class="text-white">CLIENT</span>
+            <span class="text-gray-600 font-extralight">TESTIMONIALS</span>
+          </h2>
+          <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed font-light">
+            Distinguished voices sharing their premium technology experiences
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <!-- Review Cards -->
+          <div class="group bg-gray-950 border border-gray-800 p-12 hover:border-gray-700 transition-all duration-700">
+            <div class="flex items-start space-x-6 mb-8">
+              <div class="w-16 h-16 border border-gray-700 flex items-center justify-center">
+                <span class="text-gray-600 font-light text-lg">AS</span>
+              </div>
+              <div>
+                <h3 class="font-light text-xl text-white mb-2 tracking-wide">Alex Sterling</h3>
+                <div class="flex text-gray-600 space-x-1">
+                  <span class="text-sm">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-500 leading-relaxed text-sm font-light">
+              "The LuxeBook Pro completely transformed my workflow. The precision engineering and AI optimization deliver unparalleled performance. This is truly exceptional technology."
+            </p>
+          </div>
+
+          <div class="group bg-gray-950 border border-gray-800 p-12 hover:border-gray-700 transition-all duration-700">
+            <div class="flex items-start space-x-6 mb-8">
+              <div class="w-16 h-16 border border-gray-700 flex items-center justify-center">
+                <span class="text-gray-600 font-light text-lg">JN</span>
+              </div>
+              <div>
+                <h3 class="font-light text-xl text-white mb-2 tracking-wide">Jordan Nova</h3>
+                <div class="flex text-gray-600 space-x-1">
+                  <span class="text-sm">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-500 leading-relaxed text-sm font-light">
+              "LuxeTech's attention to detail is unmatched. The Luxe Watch has redefined my relationship with technology. Absolutely exceptional craftsmanship."
+            </p>
+          </div>
+
+          <div class="group bg-gray-950 border border-gray-800 p-12 hover:border-gray-700 transition-all duration-700">
+            <div class="flex items-start space-x-6 mb-8">
+              <div class="w-16 h-16 border border-gray-700 flex items-center justify-center">
+                <span class="text-gray-600 font-light text-lg">MC</span>
+              </div>
+              <div>
+                <h3 class="font-light text-xl text-white mb-2 tracking-wide">Morgan Clarke</h3>
+                <div class="flex text-gray-600 space-x-1">
+                  <span class="text-sm">★★★★★</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-500 leading-relaxed text-sm font-light">
+              "Pure sophistication. Every product embodies luxury and innovation in perfect harmony. LuxeTech sets the gold standard for premium technology."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-black py-32 px-8">
+      <div class="container mx-auto">
+        <div class="text-center mb-24">
+          <h2 class="text-5xl font-thin mb-8 tracking-wide">
+            <span class="text-white">CONTACT</span>
+            <span class="text-gray-600 font-extralight">US</span>
+          </h2>
+          <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed font-light">
+            Connect with our luxury technology specialists
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <!-- Contact Information -->
+          <div class="space-y-10">
+            <div class="group flex items-start space-x-8 p-12 bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700">
+              <div class="w-16 h-16 border border-gray-700 flex items-center justify-center">
+                <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-light text-xl text-white mb-4 tracking-wide">LOCATION</h3>
+                <p class="text-gray-500 leading-relaxed font-light text-sm">
+                  <span class="block">LuxeTech Headquarters</span>
+                  <span class="block">500 Premium Boulevard</span>
+                  <span class="block">Luxury District, Elite City 10001</span>
+                </p>
+              </div>
+            </div>
+            
+            <div class="group flex items-start space-x-8 p-12 bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700">
+              <div class="w-16 h-16 border border-gray-700 flex items-center justify-center">
+                <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-light text-xl text-white mb-4 tracking-wide">EMAIL</h3>
+                <p class="text-gray-500 leading-relaxed font-light text-sm">
+                  <span class="block">hello@luxetech.com</span>
+                  <span class="block">support@luxetech.com</span>
+                  <span class="block">partnerships@luxetech.com</span>
+                </p>
+              </div>
+            </div>
+            
+            <div class="group flex items-start space-x-8 p-12 bg-gray-950 border border-gray-800 hover:border-gray-700 transition-all duration-700">
+              <div class="w-16 h-16 border border-gray-700 flex items-center justify-center">
+                <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-light text-xl text-white mb-4 tracking-wide">PHONE</h3>
+                <p class="text-gray-500 leading-relaxed font-light text-sm">
+                  <span class="block">+1 (555) LUXE-TECH</span>
+                  <span class="block">+1 (555) 589-3832</span>
+                  <span class="block">24/7 Concierge Available</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="bg-gray-950 border border-gray-800 p-16">
+            <form class="space-y-10">
+              <div>
+                <label for="name" class="block text-sm font-light text-gray-400 mb-4 uppercase tracking-wide">Full Name</label>
+                <input type="text" id="name" name="name" class="w-full px-6 py-4 bg-black border border-gray-800 text-gray-300 placeholder-gray-600 focus:outline-none focus:border-gray-600 transition duration-500 font-light" placeholder="Enter your full name">
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-light text-gray-400 mb-4 uppercase tracking-wide">Email Address</label>
+                <input type="email" id="email" name="email" class="w-full px-6 py-4 bg-black border border-gray-800 text-gray-300 placeholder-gray-600 focus:outline-none focus:border-gray-600 transition duration-500 font-light" placeholder="Enter your email address">
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-light text-gray-400 mb-4 uppercase tracking-wide">Message</label>
+                <textarea id="message" name="message" rows="6" class="w-full px-6 py-4 bg-black border border-gray-800 text-gray-300 placeholder-gray-600 focus:outline-none focus:border-gray-600 transition duration-500 resize-none font-light" placeholder="Share your luxury technology requirements..."></textarea>
+              </div>
+              
+              <button type="submit" class="group relative w-full">
+                <div class="bg-white text-black font-light px-8 py-4 hover:bg-gray-100 transform hover:scale-105 transition duration-500 uppercase tracking-widest text-sm">
+                  Send Message
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-black py-32 px-6 border-t border-gray-900">
+      <div class="container mx-auto">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-6xl font-thin mb-8 leading-tight text-white">
+            ELEVATE YOUR
+            <br>
+            <span class="font-extralight text-gray-400">EXPERIENCE</span>
+          </h2>
+          <p class="text-gray-500 text-lg leading-relaxed max-w-2xl mx-auto mb-16 font-light">
+            Join the exclusive circle of discerning clients who demand nothing but perfection
+          </p>
+          
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-8 justify-center items-center">
+            <button class="group">
+              <div class="bg-white text-black font-light px-12 py-6 hover:bg-gray-100 transform hover:scale-105 transition duration-700 uppercase tracking-widest text-sm">
+                Begin Your Journey
+              </div>
+            </button>
+            
+            <button class="group">
+              <div class="border border-gray-800 text-gray-400 font-light px-12 py-6 hover:border-gray-600 hover:text-gray-300 transform hover:scale-105 transition duration-700 uppercase tracking-widest text-sm">
+                Discover More
+              </div>
+            </button>
+          </div>
+          
+          <!-- Trust Indicators -->
+          <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+            <div class="group">
+              <div class="text-4xl font-thin text-white mb-2">10K+</div>
+              <div class="text-gray-600 text-sm uppercase tracking-wide font-light">Elite Clients</div>
+            </div>
+            <div class="group">
+              <div class="text-4xl font-thin text-white mb-2">99.9%</div>
+              <div class="text-gray-600 text-sm uppercase tracking-wide font-light">Perfection</div>
+            </div>
+            <div class="group">
+              <div class="text-4xl font-thin text-white mb-2">24/7</div>
+              <div class="text-gray-600 text-sm uppercase tracking-wide font-light">Concierge</div>
+            </div>
+            <div class="group">
+              <div class="text-4xl font-thin text-white mb-2">5★</div>
+              <div class="text-gray-600 text-sm uppercase tracking-wide font-light">Excellence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-500 py-20 border-t border-gray-900">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+        <!-- Brand Info -->
+        <div class="col-span-1 md:col-span-2">
+          <div class="mb-8">
+            <h3 class="text-3xl font-thin text-white mb-2">
+              LUXETECH
+            </h3>
+            <div class="w-16 h-px bg-gray-800"></div>
+          </div>
+          <p class="text-gray-600 mb-8 leading-relaxed font-light">
+            Curating exceptional technology experiences for discerning clients worldwide. 
+            Where innovation meets sophistication.
+          </p>
+          <div class="flex space-x-6">
+            <a href="#" class="group bg-gray-950 border border-gray-800 p-4 hover:border-gray-700 transition-all duration-500">
+              <svg class="w-5 h-5 text-gray-600 group-hover:text-gray-400 transition duration-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+            <a href="#" class="group bg-gray-950 border border-gray-800 p-4 hover:border-gray-700 transition-all duration-500">
+              <svg class="w-5 h-5 text-gray-600 group-hover:text-gray-400 transition duration-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="#" class="group bg-gray-950 border border-gray-800 p-4 hover:border-gray-700 transition-all duration-500">
+              <svg class="w-5 h-5 text-gray-600 group-hover:text-gray-400 transition duration-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-light text-white mb-8 uppercase tracking-wide">Navigation</h4>
+          <ul class="space-y-4">
+            <li><a href="#home" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">Home</a></li>
+            <li><a href="#products" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">Collection</a></li>
+            <li><a href="#reviews" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">Testimonials</a></li>
+            <li><a href="#contact" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">Contact</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">About</a></li>
+          </ul>
+        </div>
+        
+        <!-- Support -->
+        <div>
+          <h4 class="text-lg font-light text-white mb-8 uppercase tracking-wide">Support</h4>
+          <ul class="space-y-4">
+            <li><a href="#" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">Concierge</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">Privacy</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">Terms</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">Shipping</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-400 transition-all duration-500 font-light text-sm uppercase tracking-wide">Returns</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Bottom Footer -->
+      <div class="border-t border-gray-900 pt-12">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-gray-700 mb-6 md:mb-0 text-center md:text-left font-light text-sm">
+            <span>&copy; 2025 LUXETECH. All rights reserved.</span>
+          </div>
+          <div class="flex space-x-12 text-xs uppercase tracking-wide">
+            <a href="#" class="text-gray-700 hover:text-gray-500 transition duration-500 font-light">Privacy</a>
+            <a href="#" class="text-gray-700 hover:text-gray-500 transition duration-500 font-light">Terms</a>
+            <a href="#" class="text-gray-700 hover:text-gray-500 transition duration-500 font-light">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
